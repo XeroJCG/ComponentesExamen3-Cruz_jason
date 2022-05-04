@@ -42,6 +42,7 @@ public class HijoServiceImp implements HijoService {
             data.setNombre(hijo.getNombre());
             data.setTipoPlan(hijo.getTipoPlan());
             data.setCedulaPadre(hijo.getCedulaPadre());
+            data.setAlergias(hijo.getAlergias());
             return Optional.of(repository.save(data));
         }
         return Optional.empty();

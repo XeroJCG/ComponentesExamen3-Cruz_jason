@@ -16,6 +16,8 @@ public class Hijo {
     @Column
     private String tipoPlan;
 
+    private String alergias;
+
     private int cedulaPadre;
 
     public Hijo() {
@@ -51,6 +53,14 @@ public class Hijo {
 
     public void setTipoPlan(String tipoPlan) {
         this.tipoPlan = tipoPlan;
+    }
+
+    public String getAlergias() {
+        return alergias;
+    }
+
+    public void setAlergias(String alergias) {
+        this.alergias = alergias;
     }
 
     public int getCedulaPadre() {

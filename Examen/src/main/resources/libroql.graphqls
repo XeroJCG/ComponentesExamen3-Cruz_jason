@@ -1,0 +1,17 @@
+type Libro {
+    id: ID!,
+    idhijo: Int,
+    nombre: String,
+    estado: Boolean
+}
+
+type Query{
+    libros(count: Int):[Libro],
+    libro(id: ID): Libro
+}
+
+type Mutation{
+    crearLibro(idhijo: Int, nombre: String): Libro,
+    actualizarLibro(id: Int, idhijo: Int, nombre: String): Libro,
+    borrarLibro(id: Int): Boolean
+}
